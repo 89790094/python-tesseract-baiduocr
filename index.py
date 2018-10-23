@@ -28,6 +28,7 @@ def mongoJob():
 
 
 def mysqlJob():
+    # sql
     sql = 'select * from ms_qstem where id=413846;'
     cursor.execute(sql)
     result =cursor.fetchone()
