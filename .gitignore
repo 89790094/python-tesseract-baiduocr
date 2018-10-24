@@ -112,4 +112,5 @@ dmypy.json
 
 .DS_Store
 mongo.py
-upload/image
+upload/
+/.idea
