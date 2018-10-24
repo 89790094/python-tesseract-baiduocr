@@ -1,10 +1,10 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 from mongo import db
-from mysql import conn,cursor
+from mysql import conn, cursor
 from baidu import baiduOcr
 from tesseract import general, advanced
-from help import fetchRemoteImg,fetchImgUrl
+from help import fetchRemoteImg, fetchImgUrl
 
 
 def main():
@@ -26,13 +26,13 @@ def mongoJob():
 
 '''mysql'''
 
-
 def mysqlJob():
     # sql
     sql = 'select * from ms_qstem where id=413846;'
     cursor.execute(sql)
-    result =cursor.fetchone()
+    result = cursor.fetchone()
     print(fetchImgUrl(result['question']))
+
 
 if __name__ == '__main__':
     print(mysqlJob())

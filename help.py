@@ -26,5 +26,5 @@ def fetchRemoteImg(url):
 def fetchImgUrl(str):
     urls = []
     for url in re.findall(r'src="(.*?)"', str):
-        urls.append(fetchRemoteImg(url) if re.match(r'^(http|https)://.*\.(com|cn)', url) else fetchRemoteImg('https://test.com' + url))
+        urls.append(fetchRemoteImg(url) if re.match(r'^(http|https)://.*\.(com|cn)', url) else fetchRemoteImg('https://8jieke.com' + url))
     return urls
