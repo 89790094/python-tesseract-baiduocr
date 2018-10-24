@@ -110,6 +110,7 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+mongo.py
 .DS_Store
 upload/
 /.idea
